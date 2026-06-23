@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fry Theory | Crispy potato field notes</title>
+    <meta
+      name="description"
+      content="A rich editorial landing page and simple blog about making better fries, from potato choice to double frying."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Fry Theory home">
+        <span class="brand-mark"></span>
+        Fry Theory
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#method">Method</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#journal">Journal</a>
+        <a href="#team">Team</a>
+      </nav>
+      <a class="nav-action" href="#recipe">Start cooking</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Potato. Reconsidered.</p>
+          <h1>Fries deserve a proper thesis.</h1>
+          <p class="hero-text">
+            A crunchy, visual field guide for turning potatoes into crisp,
+            golden fries with a clean ingredient list and a repeatable process.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#recipe">Read the method</a>
+            <a class="secondary-button" href="#ingredients">Check ingredients</a>
+          </div>
+        </div>
+
+        <div class="hero-media" data-reveal>
+          <img src="assets/fries-hero.png" alt="Golden fries in a steel fryer basket" />
+          <div class="heat-dial" aria-label="Ideal oil temperature">
+            <span>Oil</span>
+            <strong>175°C</strong>
+          </div>
+        </div>
+
+        <aside class="hero-note" data-reveal>
+          <span class="mono">Field note 04</span>
+          <p>
+            The best fries are cooked twice: first to soften the center, then to
+            build a thin, glassy crust.
+          </p>
+        </aside>
+      </section>
+
+      <section class="marquee" aria-label="Fry principles">
+        <div class="marquee-track">
+          <span>rinse the starch</span>
+          <span>dry with intent</span>
+          <span>fry low, then high</span>
+          <span>salt while hot</span>
+          <span>serve immediately</span>
+        </div>
+      </section>
+
+      <section class="intro-grid">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Why this exists</p>
+          <h2>A simple blog, but treated like a kitchen experiment.</h2>
+        </div>
+        <p class="intro-text" data-reveal>
+          This page is structured like a landing page first and a blog second:
+          it teaches the ingredients, explains the fry science, and finishes
+          with a recipe card readers can actually follow.
+        </p>
+      </section>
+
+      <section class="method" id="method">
+        <div class="sticky-label">
+          <p class="eyebrow">The method</p>
+          <h2>Four moves decide the texture.</h2>
+        </div>
+
+        <div class="method-stack">
+          <article class="method-step" data-reveal>
+            <span>01</span>
+            <h3>Cut thick enough to survive.</h3>
+            <p>
+              Aim for 10 to 12 mm batons. Thin fries cook quickly, but thicker
+              fries give you a fluffy center worth protecting.
+            </p>
+          </article>
+          <article class="method-step" data-reveal>
+            <span>02</span>
+            <h3>Rinse until the water clears.</h3>
+            <p>
+              Removing surface starch keeps fries from sticking and helps the
+              crust form cleanly during the second fry.
+            </p>
+          </article>
+          <article class="method-step" data-reveal>
+            <span>03</span>
+            <h3>Dry like moisture is the enemy.</h3>
+            <p>
+              Water drops lower the oil temperature and rough up the surface.
+              Towels do more for crispness than extra seasoning does.
+            </p>
+          </article>
+          <article class="method-step" data-reveal>
+            <span>04</span>
+            <h3>Double fry with patience.</h3>
+            <p>
+              Cook once at 150°C until pale and tender. Rest. Finish at 175°C
+              until the edges sound crisp against the basket.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="ingredients" id="ingredients">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Ingredient bench</p>
+          <h2>Nothing fancy. Every item has a job.</h2>
+        </div>
+
+        <figure class="ingredient-photo" data-reveal>
+          <img src="assets/ingredient-flatlay.png" alt="Potatoes, oil, salt, and fry ingredients arranged on a prep table" />
+        </figure>
+
+        <div class="ingredient-board" data-reveal>
+          <article class="ingredient-tile potato">
+            <span class="tile-kicker">main</span>
+            <h3>Russet potatoes</h3>
+            <p>High starch, low moisture, crisp exterior, fluffy center.</p>
+          </article>
+          <article class="ingredient-tile oil">
+            <span class="tile-kicker">medium</span>
+            <h3>Neutral oil</h3>
+            <p>Peanut, canola, or rice bran oil with a high smoke point.</p>
+          </article>
+          <article class="ingredient-tile salt">
+            <span class="tile-kicker">finish</span>
+            <h3>Fine sea salt</h3>
+            <p>Small crystals cling while the fries are still hot.</p>
+          </article>
+          <article class="ingredient-tile optional">
+            <span class="tile-kicker">optional</span>
+            <h3>Vinegar water</h3>
+            <p>A short soak can help fries hold shape before the first fry.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="recipe" id="recipe">
+        <div class="recipe-card" data-reveal>
+          <p class="eyebrow">Recipe card</p>
+          <h2>Classic double-fried fries</h2>
+          <div class="recipe-meta">
+            <span>Prep 25 min</span>
+            <span>Cook 10 min</span>
+            <span>Serves 3</span>
+          </div>
+          <ol>
+            <li>Peel or scrub 4 large russet potatoes, then cut into batons.</li>
+            <li>Rinse in cold water until clear, then soak for 20 minutes.</li>
+            <li>Drain and dry thoroughly with towels.</li>
+            <li>Fry at 150°C for 4 to 5 minutes. Rest on a rack.</li>
+            <li>Fry again at 175°C until golden, then salt immediately.</li>
+          </ol>
+        </div>
+        <div class="temperature-panel" data-reveal>
+          <figure class="process-photo">
+            <img src="assets/fry-process.png" alt="Fries crisping in hot oil inside a fryer basket" />
+          </figure>
+          <span class="mono">Temperature curve</span>
+          <div class="curve" aria-hidden="true">
+            <span style="--x: 12%; --y: 68%"></span>
+            <span style="--x: 38%; --y: 46%"></span>
+            <span style="--x: 62%; --y: 52%"></span>
+            <span style="--x: 86%; --y: 22%"></span>
+          </div>
+          <p>
+            Keep batches small. Crowding drops heat, and heat is the difference
+            between crisp fries and soft potatoes.
+          </p>
+        </div>
+      </section>
+
+      <section class="journal" id="journal">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Journal</p>
+          <h2>Short notes for better batches.</h2>
+        </div>
+        <div class="journal-list">
+          <article data-reveal>
+            <span class="mono">Texture</span>
+            <h3>Why fries go limp after five minutes</h3>
+            <p>Steam trapped under the crust softens it. Use a rack, not a bowl.</p>
+          </article>
+          <article data-reveal>
+            <span class="mono">Seasoning</span>
+            <h3>The right time to salt</h3>
+            <p>Salt needs surface oil to stick, so season as soon as fries leave the basket.</p>
+          </article>
+          <article data-reveal>
+            <span class="mono">Storage</span>
+            <h3>Cold potatoes fry better</h3>
+            <p>Chilling after the first fry firms the surface before the final blast.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="team" id="team">
+        <div class="team-heading" data-reveal>
+          <p class="eyebrow">Team</p>
+          <h2>The people behind the batch.</h2>
+          <p>
+            Placeholder credits for the three makers behind this fries project.
+            Swap in real names, roles, and photos when they are ready.
+          </p>
+          <figure class="team-photo">
+            <img src="assets/team-workbench.png" alt="A behind-the-scenes fries recipe workbench for the site team" />
+          </figure>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-member" data-reveal>
+            <div class="avatar-slot" aria-hidden="true"><span>01</span></div>
+            <span class="mono">Founder / research</span>
+            <h3>Team member one</h3>
+            <p>Potato testing, recipe notes, and the first round of taste checks.</p>
+          </article>
+          <article class="team-member" data-reveal>
+            <div class="avatar-slot" aria-hidden="true"><span>02</span></div>
+            <span class="mono">Design / story</span>
+            <h3>Team member two</h3>
+            <p>Visual direction, page structure, and the editorial style of the site.</p>
+          </article>
+          <article class="team-member" data-reveal>
+            <div class="avatar-slot" aria-hidden="true"><span>03</span></div>
+            <span class="mono">Build / publish</span>
+            <h3>Team member three</h3>
+            <p>Frontend build, polish passes, and keeping the site ready to share.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Fry Theory</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
