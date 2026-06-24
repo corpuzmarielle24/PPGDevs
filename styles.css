@@ -679,6 +679,15 @@ h3 {
   transform: translateY(-4px);
 }
 
+.team-avatar {
+  width: 100%;
+  aspect-ratio: 1 / 1.08;
+  object-fit: cover;
+  margin-bottom: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
 .avatar-slot {
   position: relative;
   overflow: hidden;
