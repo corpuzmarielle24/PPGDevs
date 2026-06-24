@@ -734,6 +734,9 @@ h3 {
   font-weight: 700;
 }
 
+.team-avatar{
+  width: 100
+}
 .team-member .mono {
   display: block;
   margin-top: 24px;
