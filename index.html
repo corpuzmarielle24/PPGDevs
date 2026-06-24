@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
     <div class="grain" aria-hidden="true"></div>
 
     <header class="site-header">
@@ -38,6 +39,13 @@
         <div class="hero-copy" data-reveal>
           <p class="eyebrow">Potato. Reconsidered.</p>
           <h1>Fries deserve a proper thesis.</h1>
+          <figure class="mobile-hero-peek" aria-label="Golden fries in a steel fryer basket">
+            <img src="assets/fries-hero.png" alt="" />
+            <figcaption>
+              <span>Double fry</span>
+              <strong>175 C</strong>
+            </figcaption>
+          </figure>
           <p class="hero-text">
             A crunchy, visual field guide for turning potatoes into crisp,
             golden fries with a clean ingredient list and a repeatable process.
@@ -52,7 +60,7 @@
           <img src="assets/fries-hero.png" alt="Golden fries in a steel fryer basket" />
           <div class="heat-dial" aria-label="Ideal oil temperature">
             <span>Oil</span>
-            <strong>175°C</strong>
+              <strong>175 C</strong>
           </div>
         </div>
 
@@ -185,11 +193,60 @@
             <img src="assets/fry-process.png" alt="Fries crisping in hot oil inside a fryer basket" />
           </figure>
           <span class="mono">Temperature curve</span>
+          <div class="fry-stage-meter" aria-label="Double fry timeline">
+            <div class="stage-progress" aria-hidden="true"><span></span></div>
+            <ol class="stage-list">
+              <li class="fry-stage is-active">
+                <span>01</span>
+                <strong>Soak</strong>
+                <em>20 min</em>
+              </li>
+              <li class="fry-stage">
+                <span>02</span>
+                <strong>First fry</strong>
+                <em>150 C</em>
+              </li>
+              <li class="fry-stage">
+                <span>03</span>
+                <strong>Rest</strong>
+                <em>Rack dry</em>
+              </li>
+              <li class="fry-stage">
+                <span>04</span>
+                <strong>Finish</strong>
+                <em>175 C</em>
+              </li>
+            </ol>
+          </div>
           <div class="curve" aria-hidden="true">
-            <span style="--x: 12%; --y: 68%"></span>
-            <span style="--x: 38%; --y: 46%"></span>
-            <span style="--x: 62%; --y: 52%"></span>
-            <span style="--x: 86%; --y: 22%"></span>
+            <svg class="curve-svg" viewBox="0 0 640 230" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="curve-area-fill" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#191713" stop-opacity="0.18" />
+                  <stop offset="1" stop-color="#191713" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path class="curve-area" d="M64 162 C132 146 180 108 244 98 C312 88 344 138 410 126 C486 112 520 62 576 48 L576 198 L64 198 Z" />
+              <path class="curve-line" d="M64 162 C132 146 180 108 244 98 C312 88 344 138 410 126 C486 112 520 62 576 48" />
+              <g class="curve-points">
+                <g class="curve-point" transform="translate(64 162)">
+                  <circle r="8" />
+                  <text x="0" y="26">Soak</text>
+                </g>
+                <g class="curve-point" transform="translate(244 98)">
+                  <circle r="8" />
+                  <text x="0" y="-18">150 C</text>
+                </g>
+                <g class="curve-point" transform="translate(410 126)">
+                  <circle r="8" />
+                  <text x="0" y="26">Rest</text>
+                </g>
+                <g class="curve-point" transform="translate(576 48)">
+                  <circle r="8" />
+                  <text x="0" y="-18">175 C</text>
+                </g>
+              </g>
+            </svg>
           </div>
           <p>
             Keep batches small. Crowding drops heat, and heat is the difference
@@ -259,6 +316,8 @@
       <a href="#top">Back to top</a>
     </footer>
 
+    <script src="assets/vendor/gsap.min.js"></script>
+    <script src="assets/vendor/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
